@@ -28,44 +28,74 @@
 
 <body class="font-[inter]">
     <header class="bg-[#1A0B2E]">
-        <nav class="max-w-[1200px] mt-0 mb-0 mr-auto ml-auto pt-[30px] pb-[30px] flex items-center justify-between">
+        <nav class="max-w-[1200px] mt-0 mb-0 mr-auto ml-auto pt-[30px] pb-[30px] flex items-center justify-between max-[1100px]:pr-5 max-[1100px]:pl-5 max-[992px]:pr-3 max-[992px]:pl-3 max-[768px]:p-5 max-[768px]:pt-4 max-[768px]:pb-4
+            
+            ">
             <!-- logo  -->
             <div class="relative mr-auto">
-                <h1 class="text-[#FFFFFF] text-[2.3rem] font-bold ">Tech<span
+                <h1 class="text-[#FFFFFF] text-[2.3rem] font-bold max-[768px]:text-[1.8rem]">
+                    Tech<span
                         class="text-transparent bg-clip-text bg-linear-to-bl from-[#9100F8] via-[#FB09B4] to-[#F7E93F]">Wave</span>
                 </h1>
             </div>
-            <input type="checkbox" id="menu-bar" class="hidden">
-            <label for="menu-bar" class="text-white hidden">
-                <i class="fa-solid fa-bars"></i>
+            <input type="checkbox" id="menu-bar" class="hidden peer">
+            <label for="menu-bar" class="text-white hidden cursor-pointer z-50 max-[768px]:block ">
+                <i class="fa-solid fa-bars text-2xl"></i>
             </label>
-            <div
-                class="flex flex-row items-center justify-end gap-8 text-white max-w-[1200px] max-[576px]:flex max-[576px]:flex-col max-[576px]:w-[300px] max-[576px]:items-start">
-                <label for="menu-bar" class="hidden">
-                    <i class="fa-solid fa-xmark"></i>
+
+            <!-- Main Manu Container -->
+            <div class="
+                    flex flex-row items-center justify-end gap-8 text-white 
+                    max-[768px]:fixed max-[768px]:top-0 max-[768px]:right-0 max-[768px]:h-screen 
+                    max-[768px]:w-[280px] 
+                    max-[768px]:bg-[#1A0B2E] 
+                    max-[768px]:flex-col 
+                    max-[768px]:justify-start 
+                    max-[768px]:pt-24 
+                    max-[768px]:px-10 
+                    max-[768px]:z-40 
+                    max-[768px]:shadow-2xl
+                    max-[768px]:transition-transform 
+                    max-[768px]:duration-300 
+                    max-[768px]:translate-x-full 
+                    peer-checked:max-[768px]:translate-x-0
+                ">
+                <label for="menu-bar"
+                    class="hidden max-[768px]:block absolute top-8 right-8 text-white text-2xl cursor-pointer">
                 </label>
 
-                <!-- menu bar  -->
                 <a href="#about"
-                    class="leading-[120%] font-medium pt-2 pb-2 pl-3 pr-3 rounded-3xl transition delay-150 duration-500 ease-in-out hover:bg-linear-to-bl from-[#9100f8] via-[#fb09b4] to-[#f7e93f] max-[576px]:block">About</a>
+                    class="leading-[120%] font-medium pt-2 pb-2 pl-3 pr-3 rounded-3xl transition duration-500 hover:bg-linear-to-bl from-[#9100f8] via-[#fb09b4] to-[#f7e93f]">About</a>
                 <a href="#episode"
-                    class="leading-[120%] font-medium pt-2 pb-2 pl-3 pr-3 rounded-3xl transition delay-150 duration-500 ease-in-out hover:bg-linear-to-bl from-[#9100f8] via-[#fb09b4] to-[#f7e93f] max-[576px]:block">Episode</a>
+                    class="leading-[120%] font-medium pt-2 pb-2 pl-3 pr-3 rounded-3xl transition duration-500 hover:bg-linear-to-bl from-[#9100f8] via-[#fb09b4] to-[#f7e93f]">Episode</a>
                 <a href="#host"
-                    class="leading-[120%] font-medium pt-2 pb-2 pl-3 pr-3 rounded-3xl transition delay-150 duration-500 ease-in-out hover:bg-linear-to-bl from-[#9100f8] via-[#fb09b4] to-[#f7e93f] max-[576px]:block">Host</a>
+                    class="leading-[120%] font-medium pt-2 pb-2 pl-3 pr-3 rounded-3xl transition duration-500 hover:bg-linear-to-bl from-[#9100f8] via-[#fb09b4] to-[#f7e93f]">Host</a>
+
                 <!-- btn  -->
-                <button
-                    class="text-white cursor-pointer pt-3 pb-3 pr-4 pl-4 bg-linear-to-bl to-[#F7E93F] via-[#FB09B4] from-[#9100F8] rounded-4xl font-semibold max-[576px]:hidden">Subscribe
-                    <i class="fa-solid fa-arrow-right"></i></button>
+
+                <div class="relative p-[2px] overflow-hidden rounded-4xl inline-flex items-center justify-center">
+                    <div
+                        class="absolute w-[9900%] h-[9900%] animate-[spin_3s_linear_infinite] bg-[conic-gradient(from_0deg,#9100F8,#FB09B4,#F7E93F,#9100F8)]">
+                    </div>
+                    <button
+                        class="relative z-10 bg-[#1A0B2E] px-6 py-3 rounded-4xl text-white font-semibold flex items-center gap-2">
+                        Subscribe
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
             </div>
         </nav>
 
         <hr class="bg-[rgba(182,62,238,0.2)] h-0.5">
 
-        <section id="banner" class="max-w-[1600px] mt-0 mb-0 mr-auto ml-auto bg-[url(/assets/hero-bg.png)]">
-            <div class="flex items-center justify-center flex-col pt-[101px] relative">
-                <div class="bg-[url(./assets/hero-circle.png)] bg-no-repeat bg-contain p-30">
+        <section id="banner"
+            class="max-w-full mt-0 mb-0 mr-auto ml-auto bg-[url(/assets/hero-bg.png)] bg-no-repeat bg-center">
+            <div class="flex items-center justify-center flex-col pt-[101px]">
+                <div class="bg-[url(./assets/hero-circle.png)] bg-no-repeat bg-contain p-30 relative 
+                max-[1100px]:p-25
+                ">
                     <button
-                        class="absolute top-[110px] right-[650px] bg-[#00FF88] text-[#1A0B2E] text-[1.1rem] font-semibold pt-1.5 pb-1.5 pr-4 pl-4 rounded-4xl">NEW</button>
+                        class="absolute top-3 right-[50px] bg-[#00FF88] text-[#1A0B2E] text-[1.1rem] font-semibold pt-1.5 pb-1.5 pr-4 pl-4 rounded-4xl">NEW</button>
                     <img src="./assets/microphone.png" alt="A simple white color microphone png"
                         class="relative -top-5">
                 </div>
@@ -90,7 +120,7 @@
     </header>
 
     <section id="about" class=" bg-[#1A0B2E]">
-        <div class="max-w-[1200px] m-auto mb-0 mt-0 text-center pt-[50px]">
+        <div class="max-w-[1200px] m-auto mb-0 mt-0 text-center pt-[50px] max-[1230px]:pr-5 max-[1230px]:pl-5">
             <h1 class="text-[#ffff] text-[48px] font-bold mb-4">About the Podcast</h1>
             <p class="text-[rgba(255,255,255,0.8)] leading-5">TechWave is your go-to podcast for staying ahead in the
                 fast-paced world of
@@ -124,12 +154,14 @@
         </div>
     </section>
 
-    <section class="bg-[#230E3D] pt-[120px] pb-[120px]">
+    <section class="bg-[#230E3D] pt-[120px] pb-[120px] max-[992px]:py-24">
         <div class="max-w-[1200px] m-auto mt-0 mb-0">
             <h1 class="text-white text-[48px] font-bold text-center">Why Choose Tech<span
                     class="text-transparent bg-clip-text bg-linear-to-bl from-[#9100F8] via-[#FB09B4] to-[#F7E93F]">Wave</span>
             </h1>
-            <div class="pt-10 grid grid-cols-3 auto-rows-auto gap-[30px]">
+            <div class="pt-10 grid grid-cols-3 auto-rows-auto gap-[30px] max-[992px]:gap-5 
+            max-[900px]:gap-4
+            ">
                 <div class="bg-[#2A0F4D] rounded-3xl p-10 flex flex-col justify-center row-span-2">
                     <img src="./assets/headphone.png" alt="headphone icon" class="max-w-min">
                     <h3 class="mt-4 text-[rgb(255,255,255)] font-bold text-[24px] mb-4">Premium Audio Quality</h3>
@@ -170,12 +202,17 @@
         </div>
     </section>
 
-    <section id="episode" class="bg-[#1A0B2E] pt-[120px] pb-[120px]">
+    <section id="episode" class="bg-[#1A0B2E] pt-[120px] pb-[120px] max-[992px]:py-24">
         <div class="max-w-[1200px] m-auto mt-0 mb-0">
             <h1 class="text-[#FFFFFF] text-[3rem] font-bold text-center mb-10">Featured Episodes</h1>
-            <div class="flex items-center justify-between gap-[30px]">
+            <div class="flex items-center justify-center gap-[30px]
+            max-[1215px]:flex
+            max-[1215px]:flex-wrap
+            max-[1215px]:gap-8
+            max-[1215px]:px-7
+            ">
                 <div class="max-w-[380px] bg-[#250D44] rounded-2xl">
-                    <iframe width="380" height="214" class="rounded-t-2xl"
+                    <iframe width="380" height="214" class="rounded-t-2xl max-w-[380px]"
                         src="https://www.youtube.com/embed/5O5e0nnVulY?si=fuzt-VmDg_EkUAav" title="YouTube video player"
                         frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -230,7 +267,7 @@
         </div>
     </section>
 
-    <section id="host" class="bg-[#1A0B2E] pt-[120px] pb-[120px]">
+    <section id="host" class="bg-[#1A0B2E] pt-[120px] pb-[120px] max-[992px]:py-24">
         <div class="max-w-[1200px] m-auto mt-0 mb-0">
             <h1 class="text-[#FFFFFF] text-[3rem] font-bold text-center mb-10">Meet the Host</h1>
             <div class="flex items-center justify-between gap-6 p-10 bg-[#250E44] rounded-3xl">
@@ -255,7 +292,7 @@
         </div>
     </section>
 
-    <footer id="footer" class="bg-[#1A0B2E] ">
+    <footer id="footer" class="bg-[#1A0B2E]">
         <div class="bg-[url(./assets/footer-bg.png)] p-[120px] bg-cover bg-center bg-no-repeat">
             <div class="max-w-[1200px] m-auto mt-0 mb-0 ">
                 <h1 class="text-[3.75rem] text-[#ffffff] font-extrabold text-center mb-8">Tech<span
