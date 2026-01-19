@@ -60,8 +60,10 @@
         </nav>
 
         <section class="max-w-[1600px] mt-0 mb-0 mr-auto ml-auto bg-[url(/assets/hero-bg.png)]">
-            <div class="flex items-center justify-center flex-col pt-[101px]">
+            <div class="flex items-center justify-center flex-col pt-[101px] relative">
                 <div class="bg-[url(./assets/hero-circle.png)] bg-no-repeat bg-contain p-30">
+                    <button
+                        class="absolute top-[110px] right-[650px] bg-[#00FF88] text-[#1A0B2E] text-[1.1rem] font-semibold pt-2 pb-2 pr-4 pl-4 rounded-4xl">NEW</button>
                     <img src="./assets/microphone.png" alt="A simple white color microphone png"
                         class="relative -top-5">
                 </div>
@@ -70,11 +72,13 @@
                 </h1>
                 <p class="text-[#FFFFFF] pb-6">Your daily dose of tech insights, productivity hacks, and personal
                     growth</p>
-                <div class="flex flex-row items-center justify-between gap-2">
-                    <button class="flex items-center justify-between gap-2 pt-3 pb-3 pr-5 pl-5"><img
+                <div class="flex flex-row items-center justify-between gap-2 mb-[101px]">
+                    <button
+                        class="flex items-center justify-between gap-2 pt-3 pb-3 pr-5 pl-5 bg-linear-to-bl from-[#9100f8] via-[#fb09b4] to-[#f7e93f] rounded-4xl text-[#ffffff] cursor-pointer"><img
                             src="./assets/spotify.png" alt="spotify icon">
                         Listen on Spotify</button>
-                    <button class="flex items-center justify-between gap-2 pt-3 pb-3 pr-5 pl-5"><img
+                    <button
+                        class="flex items-center justify-between gap-2 pt-3 pb-3 pr-5 pl-5 text-[#00FF88] border-2 border-[#00FF88] rounded-4xl"><img
                             src="./assets/message.png" alt="message icon">
                         Subscribe
                     </button>
