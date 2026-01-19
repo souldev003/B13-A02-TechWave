@@ -28,16 +28,26 @@
 
 <body class="font-[inter]">
     <header class="bg-[#1A0B2E]">
-        <nav class="max-w-[1200px] mt-0 mb-0 mr-auto ml-auto">
-            <div class="flex items-center justify-between pt-4 pb-4">
-                <h1 class="text-[#FFFFFF] text-[2.3rem] font-bold">Tech<span
+        <nav class="max-w-[1200px] mt-0 mb-0 mr-auto ml-auto pt-[30px] pb-[30px]">
+            <input type="checkbox" id="menu-bar" class="hidden">
+            <label for="menu-bar" class="text-white hidden">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <div class="flex flex-row items-center justify-end gap-8 text-white max-w-[1200px]">
+                <label for="menu-bar" class="hidden">
+                    <i class="fa-solid fa-xmark"></i>
+                </label>
+                <!-- logo  -->
+                <a class="text-[#FFFFFF] text-[2.3rem] font-bold relative mr-auto">Tech<span
                         class="text-transparent bg-clip-text bg-linear-to-bl from-[#9100F8] via-[#FB09B4] to-[#F7E93F] ">Wave</span>
-                </h1>
-                <ul class="text-white flex items-center justify-between gap-8">
-                    <li><a href="about" class="leading-[120%] font-medium">About</a></li>
-                    <li><a href="episode" class="leading-[120%] font-medium">Episode</a></li>
-                    <li><a href="host" class="leading-[120%] font-medium">Host</a></li>
-                </ul>
+                </a>
+                <a href="about"
+                    class="leading-[120%] font-medium pt-2 pb-2 pl-3 pr-3 rounded-3xl transition delay-150 duration-500 ease-in-out hover:bg-linear-to-bl from-[#9100f8] via-[#fb09b4] to-[#f7e93f]">About</a>
+                <a href="episode"
+                    class="leading-[120%] font-medium pt-2 pb-2 pl-3 pr-3 rounded-3xl transition delay-150 duration-500 ease-in-out hover:bg-linear-to-bl from-[#9100f8] via-[#fb09b4] to-[#f7e93f]">Episode</a>
+                <a href="host"
+                    class="leading-[120%] font-medium pt-2 pb-2 pl-3 pr-3 rounded-3xl transition delay-150 duration-500 ease-in-out hover:bg-linear-to-bl from-[#9100f8] via-[#fb09b4] to-[#f7e93f]">Host</a>
+                <!-- btn  -->
                 <button
                     class="text-white cursor-pointer pt-3 pb-3 pr-4 pl-4 bg-linear-to-bl to-[#F7E93F] via-[#FB09B4] from-[#9100F8] rounded-4xl font-semibold">Subscribe
                     <i class="fa-solid fa-arrow-right"></i></button>
