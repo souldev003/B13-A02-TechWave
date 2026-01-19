@@ -28,31 +28,59 @@
 
 <body class="font-[inter]">
     <header class="bg-[#1A0B2E]">
-        <nav class="max-w-[1200px] mt-0 mb-0 mr-auto ml-auto pt-[30px] pb-[30px]">
+        <nav class="max-w-[1200px] mt-0 mb-0 mr-auto ml-auto pt-[30px] pb-[30px] flex items-center justify-between">
+            <!-- logo  -->
+            <div class="relative mr-auto">
+                <h1 class="text-[#FFFFFF] text-[2.3rem] font-bold ">Tech<span
+                        class="text-transparent bg-clip-text bg-linear-to-bl from-[#9100F8] via-[#FB09B4] to-[#F7E93F] ">Wave</span>
+                </h1>
+            </div>
             <input type="checkbox" id="menu-bar" class="hidden">
             <label for="menu-bar" class="text-white hidden">
                 <i class="fa-solid fa-bars"></i>
             </label>
-            <div class="flex flex-row items-center justify-end gap-8 text-white max-w-[1200px]">
+            <div
+                class="flex flex-row items-center justify-end gap-8 text-white max-w-[1200px] max-[576px]:flex max-[576px]:flex-col max-[576px]:w-[300px] max-[576px]:items-start">
                 <label for="menu-bar" class="hidden">
                     <i class="fa-solid fa-xmark"></i>
                 </label>
-                <!-- logo  -->
-                <a class="text-[#FFFFFF] text-[2.3rem] font-bold relative mr-auto">Tech<span
-                        class="text-transparent bg-clip-text bg-linear-to-bl from-[#9100F8] via-[#FB09B4] to-[#F7E93F] ">Wave</span>
-                </a>
+
+                <!-- menu bar  -->
                 <a href="about"
-                    class="leading-[120%] font-medium pt-2 pb-2 pl-3 pr-3 rounded-3xl transition delay-150 duration-500 ease-in-out hover:bg-linear-to-bl from-[#9100f8] via-[#fb09b4] to-[#f7e93f]">About</a>
+                    class="leading-[120%] font-medium pt-2 pb-2 pl-3 pr-3 rounded-3xl transition delay-150 duration-500 ease-in-out hover:bg-linear-to-bl from-[#9100f8] via-[#fb09b4] to-[#f7e93f] max-[576px]:block">About</a>
                 <a href="episode"
-                    class="leading-[120%] font-medium pt-2 pb-2 pl-3 pr-3 rounded-3xl transition delay-150 duration-500 ease-in-out hover:bg-linear-to-bl from-[#9100f8] via-[#fb09b4] to-[#f7e93f]">Episode</a>
+                    class="leading-[120%] font-medium pt-2 pb-2 pl-3 pr-3 rounded-3xl transition delay-150 duration-500 ease-in-out hover:bg-linear-to-bl from-[#9100f8] via-[#fb09b4] to-[#f7e93f] max-[576px]:block">Episode</a>
                 <a href="host"
-                    class="leading-[120%] font-medium pt-2 pb-2 pl-3 pr-3 rounded-3xl transition delay-150 duration-500 ease-in-out hover:bg-linear-to-bl from-[#9100f8] via-[#fb09b4] to-[#f7e93f]">Host</a>
+                    class="leading-[120%] font-medium pt-2 pb-2 pl-3 pr-3 rounded-3xl transition delay-150 duration-500 ease-in-out hover:bg-linear-to-bl from-[#9100f8] via-[#fb09b4] to-[#f7e93f] max-[576px]:block">Host</a>
                 <!-- btn  -->
                 <button
-                    class="text-white cursor-pointer pt-3 pb-3 pr-4 pl-4 bg-linear-to-bl to-[#F7E93F] via-[#FB09B4] from-[#9100F8] rounded-4xl font-semibold">Subscribe
+                    class="text-white cursor-pointer pt-3 pb-3 pr-4 pl-4 bg-linear-to-bl to-[#F7E93F] via-[#FB09B4] from-[#9100F8] rounded-4xl font-semibold max-[576px]:hidden">Subscribe
                     <i class="fa-solid fa-arrow-right"></i></button>
             </div>
         </nav>
+
+        <section class="max-w-[1600px] mt-0 mb-0 mr-auto ml-auto bg-[url(/assets/hero-bg.png)]">
+            <div class="flex items-center justify-center flex-col pt-[101px]">
+                <div class="bg-[url(./assets/hero-circle.png)] bg-no-repeat bg-contain p-30">
+                    <img src="./assets/microphone.png" alt="A simple white color microphone png"
+                        class="relative -top-5">
+                </div>
+                <h1 class="text-[3.75rem] text-[#ffffff] font-extrabold mb-2.5"><span
+                        class="text-transparent bg-clip-text bg-linear-to-bl from-[#9100F8] via-[#FB09B4] to-[#F7E93F]">Tech</span>Wave
+                </h1>
+                <p class="text-[#FFFFFF] pb-6">Your daily dose of tech insights, productivity hacks, and personal
+                    growth</p>
+                <div class="flex flex-row items-center justify-between gap-2">
+                    <button class="flex items-center justify-between gap-2 pt-3 pb-3 pr-5 pl-5"><img
+                            src="./assets/spotify.png" alt="spotify icon">
+                        Listen on Spotify</button>
+                    <button class="flex items-center justify-between gap-2 pt-3 pb-3 pr-5 pl-5"><img
+                            src="./assets/message.png" alt="message icon">
+                        Subscribe
+                    </button>
+                </div>
+            </div>
+        </section>
     </header>
 </body>
 
