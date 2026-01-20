@@ -28,7 +28,7 @@
 
 <body class="font-[inter]">
     <header class="bg-[#1A0B2E]">
-        <nav class="max-w-[1200px] mt-0 mb-0 mr-auto ml-auto pt-[30px] pb-[30px] flex items-center justify-between max-[1100px]:pr-5 max-[1100px]:pl-5 max-[992px]:pr-3 max-[992px]:pl-3 max-[768px]:p-5 max-[768px]:pt-4 max-[768px]:pb-4
+        <nav class="max-w-[1200px] mt-0 mb-0 mr-auto ml-auto pt-[30px] pb-[30px] flex items-center justify-between max-[1100px]:pr-5 max-[1100px]:pl-5 max-[992px]:pr-3 max-[992px]:pl-3 max-[768px]:p-5 max-[768px]:pt-4 max-[768px]:pb-4 max-[576px]:py-8 
             
             ">
             <!-- logo  -->
@@ -89,6 +89,7 @@
 
         <hr class="bg-[rgba(182,62,238,0.2)] h-0.5">
 
+        <!-- responsive completed -->
         <section id="banner"
             class="max-w-full mt-0 mb-0 mr-auto ml-auto bg-[url(./assets/hero-bg.png)] bg-no-repeat bg-center">
             <div class="flex items-center justify-center flex-col pt-[101px]">
@@ -101,31 +102,40 @@
                     <img src="./assets/microphone.png" alt="A simple white color microphone png"
                         class="relative -top-5">
                 </div>
-                <h1 class="text-[3.75rem] text-[#ffffff] font-extrabold mb-2.5"><span
+                <h1 class="text-[3.75rem] text-[#ffffff] font-extrabold mb-2.5 max-[576px]:text-[3rem]"><span
                         class="text-transparent bg-clip-text bg-linear-to-bl from-[#9100F8] via-[#FB09B4] to-[#F7E93F]">Tech</span>Wave
                 </h1>
                 <p class="text-[#FFFFFF] pb-6 text-center max-[768px]:p-4">Your daily dose of tech insights,
                     productivity hacks, and
                     personal
                     growth</p>
-                <div class="flex flex-row items-center justify-between gap-2 mb-[101px]">
+                <div class="flex flex-row items-center justify-between gap-2 mb-[101px] max-[768px]:mb-10">
                     <button
                         class="flex items-center justify-between gap-2 pt-3 pb-3 pr-5 pl-5 bg-linear-to-bl from-[#9100f8] via-[#fb09b4] to-[#f7e93f] rounded-4xl text-[#ffffff] cursor-pointer transition-transform duration-200 ease-in-out hover:scale-[1.05]"><img
                             src="./assets/spotify.png" alt="spotify icon">
                         Listen on Spotify</button>
-                    <button
-                        class="flex items-center justify-between gap-2 pt-3 pb-3 pr-5 pl-5 text-[#00FF88] border-2 border-[#00FF88] rounded-4xl cursor-pointer transition-transform duration-200 ease-in-out hover:scale-[1.05]"><img
-                            src="./assets/message.png" alt="message icon">
-                        Subscribe
-                    </button>
+
+                    <div class="relative p-0.5 rounded-4xl inline-flex  cursor-pointer">
+                        <div class="absolute w-[200px] h-[200px] -left-3 -top-15 animate-[spin_3s_linear_infinite] 
+                            blur-sm bg-[conic-gradient(from_0deg,#00FF88,black,black,#00FF88)] cursor-pointer">
+                        </div>
+                        <button class="relative z-10 flex items-center justify-between gap-2 px-6 py-3 
+                            bg-[#1A0B2E] text-[#00FF88] rounded-4xl transition-transform duration-200 
+                            group-hover:scale-[0.98] cursor-pointer"><img src="./assets/message.png"
+                                alt="message icon">
+                            Subscribe
+                        </button>
+                    </div>
+
                 </div>
             </div>
         </section>
     </header>
 
     <section id="about" class=" bg-[#1A0B2E]">
-        <div class="max-w-[1200px] m-auto mb-0 mt-0 text-center pt-[50px] max-[1230px]:pr-5 max-[1230px]:pl-5">
-            <h1 class="text-[#ffff] text-[48px] font-bold mb-4">About the Podcast</h1>
+        <div
+            class="max-w-[1200px] m-auto mb-0 mt-0 text-center pt-[50px] max-[1230px]:pr-5 max-[1230px]:pl-5 max-[576px]:py-10">
+            <h1 class="text-[#ffff] text-[48px] font-bold mb-4 max-[576px]:text-[3rem]">About the Podcast</h1>
             <p class="text-[rgba(255,255,255,0.8)] leading-5">TechWave is your go-to podcast for staying ahead in the
                 fast-paced world of
                 technology. <br>
@@ -140,10 +150,14 @@
                 max-[768px]:grid
                 max-[768px]:grid-cols-2
                 max-[768px]:gap-8
+                max-[768px]:mt-14
+                max-[768px]:pb-14
                 
                 max-[576px]:flex-wrap
                 max-[576px]:justify-center
                 max-[576px]:gap-6
+                max-[576px]:mt-10
+                max-[576px]:pb-10
                 ">
                     <div>
                         <h2 class="text-[#00FF88] text-[48px] font-black">150K+</h2>
@@ -168,9 +182,11 @@
 
     <!-- resposive complete -->
 
-    <section class="bg-[#230E3D] pt-[120px] pb-[120px] max-[992px]:py-24">
+    <section class="bg-[#230E3D] pt-[120px] pb-[120px] max-[992px]:py-24 max-[768px]:py-14">
         <div class="max-w-[1200px] m-auto mt-0 mb-0">
-            <h1 class="text-white text-[48px] font-bold text-center">Why Choose Tech<span
+            <h1
+                class="text-white text-[3rem] font-bold text-center max-[768px]:text-[2.8rem] max-[576px]:text-[2.5rem]">
+                Why Choose Tech<span
                     class="text-transparent bg-clip-text bg-linear-to-bl from-[#9100F8] via-[#FB09B4] to-[#F7E93F]">Wave</span>
             </h1>
             <div class="pt-10 grid grid-cols-3 auto-rows-auto gap-[30px]
@@ -230,9 +246,10 @@
         </div>
     </section>
 
-    <section id="episode" class="bg-[#1A0B2E] pt-[120px] pb-[120px] max-[992px]:py-24">
+    <section id="episode" class="bg-[#1A0B2E] pt-[120px] pb-[120px] max-[992px]:py-24 max-[768px]:py-16">
         <div class="max-w-[1200px] m-auto mt-0 mb-0">
-            <h1 class="text-[#FFFFFF] text-[3rem] font-bold text-center mb-10">Featured Episodes</h1>
+            <h1 class="text-[#FFFFFF] text-[3rem] font-bold text-center mb-10 max-[768px]:text-[2.8rem]">Featured
+                Episodes</h1>
             <div class="flex items-center justify-center gap-[30px]
             max-[1215px]:flex
             max-[1215px]:flex-wrap
@@ -304,7 +321,8 @@
         max-[992px]:p-10
         max-[768px]:p-5
         ">
-            <h1 class="text-[#FFFFFF] text-[3rem] font-bold text-center mb-10">Meet the Host</h1>
+            <h1 class="text-[#FFFFFF] text-[3rem] font-bold text-center mb-10 max-[768px]:text-[2.8rem]">Meet the Host
+            </h1>
             <div class="flex items-center justify-between gap-6 p-10 bg-[#250E44] rounded-3xl
             max-[768px]:flex-col
             max-[768px]:p-7
@@ -313,7 +331,7 @@
                     class="align-middle transition-transform duration-200 ease-out hover:scale-[1.15]">
 
                 <div class="flex flex-col gap-4 p-2">
-                    <h1 class="text-[#FFFFFF] text-[2rem] font-bold">Alex Kumar</h1>
+                    <h1 class="text-[#FFFFFF] text-[2rem] font-bold max-[768px]:text-[2rem]">Alex Kumar</h1>
                     <p class="text-[rgba(255,255,255,0.6)] leading-6">Tech entrepreneur, productivity expert, and
                         lifelong learner. Alex has been in the tech industry
                         for over 10 years,
